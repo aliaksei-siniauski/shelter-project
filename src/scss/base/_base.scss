@@ -1,10 +1,7 @@
 body {
   min-height: 100vh;
   @extend %flex;
-  flex-direction: column;
+  @extend %flex-column;
   @extend %js-content-space-between;
-  font-family: $ff-main;
-  @include font($main-size, 1.5);
-  color: $main-color;
-  background: $light-color;
+  background: $color-light;
 }
