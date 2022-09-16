@@ -1,0 +1,23 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/scss/main.scss src/scss/main.css"
+  },
+  "author": "Alexsi Siniauski",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksei-siniauski/productivity-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aliaksei-siniauski/productivity-project/issues"
+  },
+  "homepage": "https://github.com/aliaksei-siniauski/productivity-project#readme",
+  "description": ""
+}

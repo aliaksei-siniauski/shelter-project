@@ -1,0 +1,34 @@
+@mixin font($size, $height, $weight: $bold, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+/* @mixin columns($width) {
+  @extend %flex;
+  @extend %js-content-space-between;
+  > * {
+    flex-basis: $width;
+  }
+} */
+
+/* Meida quaries */
+
+/* @mixin media-desktop {
+  @media (min-width: 1441px) {
+    @content;
+  }
+}
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+ */

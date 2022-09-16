@@ -1,0 +1,23 @@
+%flex {
+  display: flex;
+}
+
+%flex-column {
+  flex-direction: column;
+}
+
+%js-content-space-between {
+  justify-content: space-between;
+}
+
+%al-items-center {
+  align-items: center;
+}
+
+%transition {
+  transition: ease-in-out 0.5s;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
