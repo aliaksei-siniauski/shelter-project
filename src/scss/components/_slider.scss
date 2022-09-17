@@ -1,0 +1,55 @@
+.slider__wrapper {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}
+.slider {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+  gap: 90px;
+}
+
+.slide {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  background: $color-link-active;
+}
+
+.slide__img {
+  margin: $card-margin-bottom;
+  border: $card-radius;
+}
+
+.slide__title {
+  margin: $card-margin-bottom;
+  @extend %font-add;
+  @include font($size-second, $line-second);
+  @extend %letter-spacing-main;
+  color: $color-section-header;
+}
+
+.slide__button {
+  margin: $card-margin-bottom;
+}
+
+/*Arrows */
+
+.arrow {
+  width: 52px;
+  height: 52px;
+  @extend %flex;
+  @extend %js-content-center;
+  @extend %al-items-center;
+  border: 0.2rem solid $color-primary;
+  border-radius: 100rem;
+  @extend %cursor-pointer;
+  @extend %transition;
+  &:focus {
+    background: $color-primary-light;
+  }
+  &:hover {
+    background: $color-primary-light;
+  }
+}

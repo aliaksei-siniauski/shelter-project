@@ -10,6 +10,8 @@ h2 {
 
 h3 {
   @include font($size-header, $line-header);
+  color: $color-section-header;
+  @extend %letter-spacing-main;
 }
 
 h4 {

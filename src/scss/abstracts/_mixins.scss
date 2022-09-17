@@ -16,13 +16,13 @@
   font-style: $style;
 }
 
-/* @mixin columns($width) {
+@mixin columns($width) {
   @extend %flex;
   @extend %js-content-space-between;
   > * {
     flex-basis: $width;
   }
-} */
+}
 
 /* Meida quaries */
 

@@ -9,18 +9,11 @@
 /*  */
 /* 110% */
 /* Font Family */
-/* Padding&Margin */
 /* Radius*/
 /* Font Weight */
 /* Width */
-/* Padding */
-/* @mixin columns($width) {
-  @extend %flex;
-  @extend %js-content-space-between;
-  > * {
-    flex-basis: $width;
-  }
-} */
+/* Max-width section */
+/* Padding & Margin */
 /* Meida quaries */
 /* @mixin media-desktop {
   @media (min-width: 1441px) {
@@ -39,31 +32,39 @@
   }
 }
  */
-.hero__container, .header__container, .list, .button, body {
+.about-columns, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, body {
   display: flex;
 }
 
-.button, body {
+.slide, .button, body {
   flex-direction: column;
 }
 
-.hero__container, .header__container, body {
+.about-columns, .hero__container, .header__container, .slider, .slider__wrapper, body {
   justify-content: space-between;
 }
 
-.hero__container, .header__container, .list, .button {
+.arrow {
+  justify-content: center;
+}
+
+.hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
   align-items: center;
 }
 
-.list__link:hover, .button {
+.about__text, .hero__text, .slide__title, .button {
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.arrow, .list__link:hover, .button {
   transition: ease-in-out 0.5s;
 }
 
-.button {
+.arrow, .button {
   cursor: pointer;
 }
 
-.button, h1 {
+.slide__title, .button, h3, h1 {
   letter-spacing: 0.06em;
 }
 
@@ -505,6 +506,7 @@ h3 {
   line-height: 4.6rem;
   font-weight: 400;
   font-style: normal;
+  color: #545454;
 }
 
 h4 {
@@ -530,17 +532,19 @@ h5 {
 
 /* Components */
 .button {
+  display: inline-flex;
   padding: 1.5rem 4.5rem;
   font-size: 1.7rem;
   line-height: 2.2rem;
   font-weight: 400;
   font-style: normal;
+  color: #292929;
   background: transparent;
   border: none;
+  border-radius: 10rem;
 }
 .button--color {
   background: #f1cdb3;
-  border-radius: 10rem;
   border: #f1cdb3;
 }
 .button--color:hover {
@@ -548,7 +552,10 @@ h5 {
 }
 .button--border {
   background: #ffffff;
-  border: 2px;
+  border: 2px solid #f1cdb3;
+}
+.button--border:hover {
+  background: #f1cdb3;
 }
 
 .logo {
@@ -568,6 +575,20 @@ h5 {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.1em;
+}
+
+.icon {
+  display: inline-block;
+}
+.icon--arrow-next {
+  width: 14px;
+  height: 6px;
+  background: url("/src/icons/arrow-next.svg");
+}
+.icon--arrow-prev {
+  width: 14px;
+  height: 6px;
+  background: url("/src/icons/arrow-prev.svg");
 }
 
 .list__link::before, .list__link {
@@ -614,7 +635,67 @@ h5 {
   display: none;
 }
 
+.slider {
+  gap: 90px;
+}
+
+.slide {
+  background: #fafafa;
+}
+
+.slide__img {
+  margin: 0 0 3rem 0;
+  border: 0.9rem 0.9rem 0px 0px;
+}
+
+.slide__title {
+  margin: 0 0 3rem 0;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+}
+
+.slide__button {
+  margin: 0 0 3rem 0;
+}
+
+/*Arrows */
+.arrow {
+  width: 52px;
+  height: 52px;
+  border: 0.2rem solid #f1cdb3;
+  border-radius: 100rem;
+}
+.arrow:focus {
+  background: #fddcc4;
+}
+.arrow:hover {
+  background: #fddcc4;
+}
+
+.section {
+  padding: 7.8rem 0 10rem;
+}
+
+.section-title {
+  margin: 0 0 6rem 0;
+}
+
 /* Layout  */
+/* .layout-2-columns {
+  @include columns(
+    $width: (
+      48%,
+    )
+  );
+}
+ */
+/* .layout-3-columns {
+  @include columns($width: calc(100% / 3 - 90px));
+}
+ */
 .header {
   padding: 6rem 0;
   background: url("../images/background/noise_transparent@2x.png"), linear-gradient(90deg, #5b483a, #211f20);
@@ -626,6 +707,7 @@ h5 {
 
 .hero__content {
   max-width: 460px;
+  padding: 0 0 7.8rem;
 }
 
 .hero__title {
@@ -636,6 +718,40 @@ h5 {
 .hero__text {
   margin: 0 0 4.2rem 0;
   color: #cdcdcd;
+}
+
+.about__container {
+  max-width: 880px;
+}
+
+.about-columns {
+  gap: 12rem;
+}
+
+.about__content {
+  padding: 1.4rem 0;
+}
+
+.about__title {
+  padding: 0 6rem 0 0;
+  margin: 0 0 2.5rem 0;
+}
+
+.about__text {
+  max-width: 430px;
+  color: #4c4c4c;
+}
+.about__text--first {
+  margin: 0 0 2.5rem 0;
+}
+
+.pets {
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.pets-slider-wrapper {
+  margin: 0 0 6rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

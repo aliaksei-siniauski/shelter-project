@@ -1,0 +1,13 @@
+.icon {
+  display: inline-block;
+  &--arrow-next {
+    width: 14px;
+    height: 6px;
+    background: url("/src/icons/arrow-next.svg");
+  }
+  &--arrow-prev {
+    width: 14px;
+    height: 6px;
+    background: url("/src/icons/arrow-prev.svg");
+  }
+}

@@ -1,0 +1,27 @@
+.about__container {
+  max-width: $max-width-about;
+}
+
+.about-columns {
+  @extend %flex;
+  @extend %js-content-space-between;
+  gap: 12rem;
+}
+
+.about__content {
+  padding: 1.4rem 0;
+}
+
+.about__title {
+  padding: 0 6rem 0 0;
+  margin: $about-margin-bottom;
+}
+
+.about__text {
+  max-width: 430px;
+  @extend %font-add;
+  color: $color-paragraph;
+  &--first {
+    margin: $about-margin-bottom;
+  }
+}

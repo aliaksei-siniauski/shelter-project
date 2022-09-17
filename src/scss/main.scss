@@ -26,9 +26,12 @@
 @import "components/nav";
 @import "components/burger";
 @import "components/slider";
+@import "components/section";
 
 /* Layout  */
+@import "layout/columns";
 @import "layout/header";
 @import "layout/hero";
+@import "layout/about";
+@import "layout/pets";
 @import "layout/footer";
-@import "layout/columns";

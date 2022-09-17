@@ -10,6 +10,7 @@
 
 .hero__content {
   max-width: 460px;
+  padding: 0 0 7.8rem;
 }
 
 .hero__title {
@@ -19,5 +20,6 @@
 
 .hero__text {
   margin: $hero-margin-bottom;
+  @extend %font-add;
   color: $color-link;
 }

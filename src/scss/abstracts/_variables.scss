@@ -47,10 +47,6 @@ $line-hero: 5.7rem;
 $font-family-primary: "Georgia", serif;
 $font-family-second: "Arial", Helvetica, sans-serif;
 
-/* Padding&Margin */
-
-$hero-margin-bottom: 0 0 4.2rem 0;
-
 /* Radius*/
 
 $border-radius-main: 10rem;
@@ -67,6 +63,15 @@ $main-width: 1230px;
 $tablet-width: 738px;
 $mobile-width: 330px;
 
-/* Padding */
+/* Max-width section */
+
+$max-width-about: 880px;
+
+/* Padding & Margin */
+
+$hero-margin-bottom: 0 0 4.2rem 0;
+$about-margin-bottom: 0 0 2.5rem 0;
+$section-margin-bottom: 0 0 6rem 0;
+$card-margin-bottom: 0 0 3rem 0;
 
 $padding-inline: 1.5rem;

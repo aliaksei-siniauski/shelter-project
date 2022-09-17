@@ -1,25 +1,31 @@
 .button {
-  @extend %flex;
+  display: inline-flex;
   @extend %al-items-center;
   @extend %flex-column;
   padding: 1.5rem 4.5rem;
+  @extend %font-add;
   @include font($size-button, $line-button);
+  color: $color-button;
   @extend %letter-spacing-main;
   background: transparent;
   border: none;
+  border-radius: $border-radius-main;
   @extend %transition;
   @extend %cursor-pointer;
 
   &--color {
     background: $color-primary;
-    border-radius: $border-radius-main;
     border: $color-primary;
     &:hover {
       background: $color-primary-light;
     }
   }
+
   &--border {
     background: $color-light;
-    border: 2px;
+    border: 2px solid $color-primary;
+    &:hover {
+      background: $color-primary;
+    }
   }
 }
