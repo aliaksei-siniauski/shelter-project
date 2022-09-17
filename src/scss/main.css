@@ -32,15 +32,16 @@
   }
 }
  */
-.donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .credit-card, .arrow, .slide, .slider, .slider__wrapper, .list, body {
+.footer-columns, .location__city, .mail,
+.phone, .footer__location, .footer__contact, .donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .layout-3-column, .credit-card, .arrow, .slide, .slider, .slider__wrapper, .list, body {
   display: flex;
 }
 
-.donation__content, .help-list__item, .slide, .button, body {
+.footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
   flex-direction: column;
 }
 
-.donation__container, .about-columns, .hero__container, .header__container, .credit-card, .slider, .slider__wrapper, body {
+.footer-columns, .donation__container, .about-columns, .hero__container, .header__container, .layout-3-column, .credit-card, .slider, .slider__wrapper, body {
   justify-content: space-between;
 }
 
@@ -48,7 +49,8 @@
   justify-content: center;
 }
 
-.donation__container, .help-list__item, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
+.location__city, .mail,
+.phone, .donation__container, .help-list__item, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
   align-items: center;
 }
 
@@ -633,6 +635,27 @@ h5 {
   height: 23px;
   background: url("../icons/credit-card.svg");
 }
+.icon--phone {
+  width: 40px;
+  height: 32px;
+  background: url("../icons/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--mail {
+  width: 40px;
+  height: 32px;
+  background: url("../icons/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--marker {
+  width: 22px;
+  height: 32px;
+  background: url("../icons/marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .list__link::before, .list__link {
   transition: ease-in-out 0.8s;
@@ -735,6 +758,10 @@ h5 {
 
 .credit-number {
   color: #545454;
+}
+
+.layout-3-column > * {
+  flex-basis: 26%;
 }
 
 /* Layout  */
@@ -852,6 +879,45 @@ h5 {
 
 .donation__credit-card {
   margin: 0 3.1rem 0 0;
+}
+
+.location__city, .mail,
+.phone {
+  gap: 2rem;
+}
+
+.footer {
+  background: url("../images/background/noise_transparent@2x.png"), linear-gradient(90deg, #5b483a, #211f20);
+}
+
+.footer__container {
+  padding: 4rem 0 0;
+}
+
+.footer-column {
+  padding: 1.3rem 0 0 0;
+}
+
+.footer-collumn__title {
+  color: #ffffff;
+}
+
+.mail__info,
+.phone__number,
+.location__info {
+  color: #f1cdb3;
+}
+
+.footer__contact {
+  gap: 4rem;
+}
+
+.footer__location {
+  gap: 3.3rem;
+}
+
+.location__info {
+  max-width: 260px;
 }
 
 /*# sourceMappingURL=main.css.map */

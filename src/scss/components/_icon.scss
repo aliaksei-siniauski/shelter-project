@@ -68,4 +68,28 @@
     height: 23px;
     background: url("../icons/credit-card.svg");
   }
+
+  &--phone {
+    width: 40px;
+    height: 32px;
+    background: url("../icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--mail {
+    width: 40px;
+    height: 32px;
+    background: url("../icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--marker {
+    width: 22px;
+    height: 32px;
+    background: url("../icons/marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

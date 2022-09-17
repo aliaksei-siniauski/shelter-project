@@ -1,0 +1,60 @@
+%footer-contacts {
+  @extend %flex;
+  @extend %flex-column;
+}
+
+%footer-contacts-items {
+  @extend %flex;
+  @extend %al-items-center;
+  gap: 2rem;
+}
+
+.footer {
+  background: $footer-gradient-background;
+}
+
+.footer__container {
+  padding: 4rem 0 0;
+}
+
+.footer-columns {
+  @extend %flex;
+  @extend %js-content-space-between;
+}
+
+.footer-column {
+  padding: 1.3rem 0 0 0;
+}
+
+.footer-collumn__title {
+  color: $color-light;
+}
+
+.mail__info,
+.phone__number,
+.location__info {
+  color: $color-primary;
+}
+
+.footer__contact {
+  @extend %footer-contacts;
+  gap: 4rem;
+}
+
+.mail,
+.phone {
+  @extend %footer-contacts-items;
+}
+
+.footer__location {
+  @extend %footer-contacts;
+  gap: 3.3rem;
+}
+
+.location__city {
+  @extend %footer-contacts-items;
+}
+
+.location__info {
+  max-width: 260px;
+}
