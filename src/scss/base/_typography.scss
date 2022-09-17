@@ -1,0 +1,20 @@
+h1 {
+  @include font($size-logo-title, $line-logo-title);
+  @extend %letter-spacing-main;
+}
+
+h2 {
+  @include font($size-hero-title, $line-hero);
+}
+
+h3 {
+  @include font($size-header, $line-header);
+}
+
+h4 {
+  @include font($size-second, $line-second);
+}
+
+h5 {
+  @include font($size-main, $line-modal-info);
+}

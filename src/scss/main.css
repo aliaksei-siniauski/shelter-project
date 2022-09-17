@@ -38,7 +38,7 @@
   }
 }
  */
-body {
+.header__container, .list, body {
   display: flex;
 }
 
@@ -46,8 +46,20 @@ body {
   flex-direction: column;
 }
 
-body {
+.header__container, body {
   justify-content: space-between;
+}
+
+.header__container, .list {
+  align-items: center;
+}
+
+.list__item {
+  transition: ease-in-out 0.5s;
+}
+
+h1 {
+  letter-spacing: 0.06em;
 }
 
 /* Vendors */
@@ -359,6 +371,12 @@ template {
 /* Base */
 body {
   min-height: 100vh;
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #4c4c4c;
   background: #ffffff;
 }
 
@@ -463,6 +481,41 @@ article {
     scroll-behavior: auto !important;
   }
 }
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 4.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*Utilities  */
 .container {
   max-width: 1230px;
@@ -471,10 +524,58 @@ article {
 }
 
 /* Components */
+.logo {
+  display: inline-block;
+  color: #f1cdb3;
+}
+
+.logo__title {
+  margin: 0 0 1rem 0;
+}
+
+.logo__subtitle {
+  padding: 0 0 0 0.4rem;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.list__item {
+  color: #cdcdcd;
+}
+.list__item:not(:first-child) {
+  margin: 0 0 0 3.6rem;
+}
+.list__item--active {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+}
+.list__item:hover {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.list__link {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .hamburger {
   display: none;
 }
 
 /* Layout  */
+.header {
+  padding: 6rem 0;
+  background: url("../images/background/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background-repeat: repeat;
+  background-position: center;
+}
 
 /*# sourceMappingURL=main.css.map */

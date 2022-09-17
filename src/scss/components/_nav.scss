@@ -1,0 +1,25 @@
+.list {
+  @extend %flex;
+  @extend %al-items-center;
+}
+
+.list__item {
+  color: $color-link;
+  @extend %transition;
+  &:not(:first-child) {
+    margin: 0 0 0 3.6rem;
+  }
+  &--active {
+    color: $color-link-active;
+    border-bottom: 3px solid $color-primary;
+  }
+  &:hover {
+    color: $color-link-active;
+    border-bottom: 3px solid $color-primary;
+  }
+}
+
+.list__link {
+  font-family: $font-family-second;
+  @include font($size-main, $line-main);
+}

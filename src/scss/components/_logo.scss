@@ -1,0 +1,15 @@
+.logo {
+  display: inline-block;
+  color: $color-primary;
+}
+
+.logo__title {
+  margin: 0 0 1rem 0;
+}
+
+.logo__subtitle {
+  padding: 0 0 0 0.4rem;
+  font-family: $font-family-second;
+  @include font($size-logo-subttile, $line-logo-subtitle);
+  letter-spacing: 0.1em;
+}
