@@ -9,6 +9,7 @@
 /*  */
 /* 110% */
 /* Font Family */
+/* Padding&Margin */
 /* Radius*/
 /* Font Weight */
 /* Width */
@@ -38,27 +39,31 @@
   }
 }
  */
-.header__container, .list, body {
+.hero__container, .header__container, .list, .button, body {
   display: flex;
 }
 
-body {
+.button, body {
   flex-direction: column;
 }
 
-.header__container, body {
+.hero__container, .header__container, body {
   justify-content: space-between;
 }
 
-.header__container, .list {
+.hero__container, .header__container, .list, .button {
   align-items: center;
 }
 
-.list__item {
+.list__link:hover, .button {
   transition: ease-in-out 0.5s;
 }
 
-h1 {
+.button {
+  cursor: pointer;
+}
+
+.button, h1 {
   letter-spacing: 0.06em;
 }
 
@@ -446,7 +451,6 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -493,6 +497,7 @@ h2 {
   line-height: 5.7rem;
   font-weight: 400;
   font-style: normal;
+  color: #ffffff;
 }
 
 h3 {
@@ -524,6 +529,28 @@ h5 {
 }
 
 /* Components */
+.button {
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  font-style: normal;
+  background: transparent;
+  border: none;
+}
+.button--color {
+  background: #f1cdb3;
+  border-radius: 10rem;
+  border: #f1cdb3;
+}
+.button--color:hover {
+  background: #fddcc4;
+}
+.button--border {
+  background: #ffffff;
+  border: 2px;
+}
+
 .logo {
   display: inline-block;
   color: #f1cdb3;
@@ -543,27 +570,44 @@ h5 {
   letter-spacing: 0.1em;
 }
 
-.list__item {
-  color: #cdcdcd;
+.list__link::before, .list__link {
+  transition: ease-in-out 0.8s;
 }
+
 .list__item:not(:first-child) {
   margin: 0 0 0 3.6rem;
 }
-.list__item--active {
-  color: #fafafa;
-  border-bottom: 3px solid #f1cdb3;
-}
-.list__item:hover {
-  color: #fafafa;
-  border-bottom: 3px solid #f1cdb3;
-}
 
 .list__link {
+  position: relative;
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 1.5rem;
   line-height: 2.4rem;
   font-weight: 400;
   font-style: normal;
+  color: #cdcdcd;
+}
+.list__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  left: 1px;
+  background: #f1cdb3;
+  opacity: 0;
+}
+.list__link--active {
+  color: #fafafa;
+}
+.list__link--active::before {
+  opacity: 1;
+}
+.list__link:hover {
+  color: #fafafa;
+}
+.list__link:hover::before {
+  opacity: 1;
 }
 
 .hamburger {
@@ -573,9 +617,25 @@ h5 {
 /* Layout  */
 .header {
   padding: 6rem 0;
-  background: url("../images/background/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-  background-repeat: repeat;
-  background-position: center;
+  background: url("../images/background/noise_transparent@2x.png"), linear-gradient(90deg, #5b483a, #211f20);
+}
+
+.hero {
+  background: url("../images/background/noise_transparent@2x.png"), linear-gradient(90deg, #5b483a, #211f20);
+}
+
+.hero__content {
+  max-width: 460px;
+}
+
+.hero__title {
+  margin: 0 0 4.2rem 0;
+  padding: 0 15rem 0 0;
+}
+
+.hero__text {
+  margin: 0 0 4.2rem 0;
+  color: #cdcdcd;
 }
 
 /*# sourceMappingURL=main.css.map */

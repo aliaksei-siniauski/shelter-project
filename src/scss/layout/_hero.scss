@@ -1,0 +1,23 @@
+.hero {
+  background: $start-screen-gradient-background;
+}
+
+.hero__container {
+  @extend %flex;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}
+
+.hero__content {
+  max-width: 460px;
+}
+
+.hero__title {
+  margin: $hero-margin-bottom;
+  padding: 0 15rem 0 0;
+}
+
+.hero__text {
+  margin: $hero-margin-bottom;
+  color: $color-link;
+}

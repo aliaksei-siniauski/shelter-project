@@ -1,0 +1,25 @@
+.button {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %flex-column;
+  padding: 1.5rem 4.5rem;
+  @include font($size-button, $line-button);
+  @extend %letter-spacing-main;
+  background: transparent;
+  border: none;
+  @extend %transition;
+  @extend %cursor-pointer;
+
+  &--color {
+    background: $color-primary;
+    border-radius: $border-radius-main;
+    border: $color-primary;
+    &:hover {
+      background: $color-primary-light;
+    }
+  }
+  &--border {
+    background: $color-light;
+    border: 2px;
+  }
+}

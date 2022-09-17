@@ -1,25 +1,46 @@
+%link-transition {
+  transition: ease-in-out 0.8s;
+}
+
 .list {
   @extend %flex;
   @extend %al-items-center;
 }
 
 .list__item {
-  color: $color-link;
-  @extend %transition;
   &:not(:first-child) {
     margin: 0 0 0 3.6rem;
-  }
-  &--active {
-    color: $color-link-active;
-    border-bottom: 3px solid $color-primary;
-  }
-  &:hover {
-    color: $color-link-active;
-    border-bottom: 3px solid $color-primary;
   }
 }
 
 .list__link {
+  position: relative;
   font-family: $font-family-second;
   @include font($size-main, $line-main);
+  color: $color-link;
+  @extend %link-transition;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 1px;
+    background: $color-primary;
+    opacity: 0;
+    @extend %link-transition;
+  }
+  &--active {
+    color: $color-link-active;
+    &::before {
+      opacity: 1;
+    }
+  }
+  &:hover {
+    color: $color-link-active;
+    @extend %transition;
+    &::before {
+      opacity: 1;
+    }
+  }
 }

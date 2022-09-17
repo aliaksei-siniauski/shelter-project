@@ -5,6 +5,7 @@ h1 {
 
 h2 {
   @include font($size-hero-title, $line-hero);
+  color: $color-light;
 }
 
 h3 {

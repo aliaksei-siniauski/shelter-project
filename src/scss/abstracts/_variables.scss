@@ -13,6 +13,11 @@ $color-italic: #b2b2b2;
 $color-light: #ffffff;
 $color-modal: #000000;
 
+$start-screen-gradient-background: url("../images/background/noise_transparent@2x.png"),
+  linear-gradient(90deg, #5b483a, #211f20);
+$footer-gradient-background: url("../images/background/noise_transparent@2x.png"),
+  linear-gradient(90deg, #5b483a, #211f20);
+
 /* Size */
 
 $size-main: 1.5rem;
@@ -41,6 +46,10 @@ $line-hero: 5.7rem;
 
 $font-family-primary: "Georgia", serif;
 $font-family-second: "Arial", Helvetica, sans-serif;
+
+/* Padding&Margin */
+
+$hero-margin-bottom: 0 0 4.2rem 0;
 
 /* Radius*/
 
