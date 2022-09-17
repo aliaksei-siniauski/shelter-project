@@ -15,23 +15,24 @@
   @extend %flex-column;
   @extend %al-items-center;
   background: $color-link-active;
+  flex-basis: 270px;
 }
 
 .slide__img {
-  margin: $card-margin-bottom;
-  border: $card-radius;
+  margin: $slide-margin-bottom;
+  border: $img-radius;
 }
 
 .slide__title {
-  margin: $card-margin-bottom;
+  margin: $slide-margin-bottom;
   @extend %font-add;
   @include font($size-second, $line-second);
-  @extend %letter-spacing-main;
   color: $color-section-header;
+  @extend %letter-spacing-main;
 }
 
 .slide__button {
-  margin: $card-margin-bottom;
+  margin: $slide-margin-bottom;
 }
 
 /*Arrows */
@@ -43,7 +44,7 @@
   @extend %js-content-center;
   @extend %al-items-center;
   border: 0.2rem solid $color-primary;
-  border-radius: 100rem;
+  border-radius: $border-radius-main;
   @extend %cursor-pointer;
   @extend %transition;
   &:focus {

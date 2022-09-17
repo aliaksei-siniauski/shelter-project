@@ -1,0 +1,21 @@
+.help__title {
+  margin: 0 0 5.5rem;
+}
+
+.help-list__wrapper {
+  padding: 0 0 0 0.3rem;
+}
+
+.help-list {
+  @extend %flex;
+  flex-wrap: wrap;
+  @extend %js-content-center;
+  gap: 5.5rem $gap-collumns;
+}
+
+.help-list__item {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+  row-gap: $gap-row;
+}

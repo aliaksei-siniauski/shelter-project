@@ -32,28 +32,32 @@
   }
 }
  */
-.about-columns, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, body {
+.donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .credit-card, .arrow, .slide, .slider, .slider__wrapper, .list, body {
   display: flex;
 }
 
-.slide, .button, body {
+.donation__content, .help-list__item, .slide, .button, body {
   flex-direction: column;
 }
 
-.about-columns, .hero__container, .header__container, .slider, .slider__wrapper, body {
+.donation__container, .about-columns, .hero__container, .header__container, .credit-card, .slider, .slider__wrapper, body {
   justify-content: space-between;
 }
 
-.arrow {
+.help-list, .arrow {
   justify-content: center;
 }
 
-.hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
+.donation__container, .help-list__item, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
   align-items: center;
 }
 
 .about__text, .hero__text, .slide__title, .button {
   font-family: "Arial", Helvetica, sans-serif;
+}
+
+.pets__button, .section-title {
+  text-align: center;
 }
 
 .arrow, .list__link:hover, .button {
@@ -64,7 +68,7 @@
   cursor: pointer;
 }
 
-.slide__title, .button, h3, h1 {
+.slide__title, .button, h5, h4, h3, h1 {
   letter-spacing: 0.06em;
 }
 
@@ -577,18 +581,57 @@ h5 {
   letter-spacing: 0.1em;
 }
 
+.icon--sleeping-area, .icon--collars-leashes, .icon--medicines, .icon--vitamins, .icon--shampoos, .icon--bowls-cups, .icon--toys, .icon--transportation, .icon--pet-food {
+  width: 60px;
+  height: 60px;
+}
+
 .icon {
   display: inline-block;
 }
 .icon--arrow-next {
   width: 14px;
   height: 6px;
-  background: url("/src/icons/arrow-next.svg");
+  background: url("../icons/arrow-next.svg");
 }
 .icon--arrow-prev {
   width: 14px;
   height: 6px;
-  background: url("/src/icons/arrow-prev.svg");
+  background: url("../icons/arrow-prev.svg");
+}
+.icon--pet-food {
+  background: url("../icons/help/pet-food.svg");
+}
+.icon--transportation {
+  background: url("../icons/help/transportation.svg");
+}
+.icon--toys {
+  background: url("../icons/help/toys.svg");
+}
+.icon--bowls-cups {
+  background: url("../icons/help/bowls-cups.svg");
+}
+.icon--shampoos {
+  background: url("../icons/help/shampoos.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon--vitamins {
+  background: url("../icons/help/vitamins.svg");
+}
+.icon--medicines {
+  background: url("../icons/help/medicines.svg");
+}
+.icon--collars-leashes {
+  background: url("../icons/help/leashes.svg");
+}
+.icon--sleeping-area {
+  background: url("../icons/help/sleeping-area.svg");
+}
+.icon--credit-card {
+  width: 30px;
+  height: 23px;
+  background: url("../icons/credit-card.svg");
 }
 
 .list__link::before, .list__link {
@@ -641,6 +684,7 @@ h5 {
 
 .slide {
   background: #fafafa;
+  flex-basis: 270px;
 }
 
 .slide__img {
@@ -666,7 +710,7 @@ h5 {
   width: 52px;
   height: 52px;
   border: 0.2rem solid #f1cdb3;
-  border-radius: 100rem;
+  border-radius: 10rem;
 }
 .arrow:focus {
   background: #fddcc4;
@@ -676,26 +720,24 @@ h5 {
 }
 
 .section {
-  padding: 7.8rem 0 10rem;
+  padding: 8rem 0 10rem;
 }
 
 .section-title {
   margin: 0 0 6rem 0;
 }
 
+.credit-card {
+  padding: 1rem 1.5rem;
+  background: #f1cdb3;
+  border-radius: 0.9rem;
+}
+
+.credit-number {
+  color: #545454;
+}
+
 /* Layout  */
-/* .layout-2-columns {
-  @include columns(
-    $width: (
-      48%,
-    )
-  );
-}
- */
-/* .layout-3-columns {
-  @include columns($width: calc(100% / 3 - 90px));
-}
- */
 .header {
   padding: 6rem 0;
   background: url("../images/background/noise_transparent@2x.png"), linear-gradient(90deg, #5b483a, #211f20);
@@ -747,11 +789,69 @@ h5 {
 
 .pets {
   background: #f6f6f6;
-  text-align: center;
+}
+
+.pets__title {
+  margin: 0 0 5.4rem 0;
 }
 
 .pets-slider-wrapper {
   margin: 0 0 6rem 0;
+}
+
+.help__title {
+  margin: 0 0 5.5rem;
+}
+
+.help-list__wrapper {
+  padding: 0 0 0 0.3rem;
+}
+
+.help-list {
+  flex-wrap: wrap;
+  gap: 5.5rem 12rem;
+}
+
+.help-list__item {
+  row-gap: 3rem;
+}
+
+.donation {
+  background: #f6f6f6;
+}
+
+.donation__container {
+  max-width: 945px;
+}
+
+.donation__img {
+  flex-basis: 505px;
+}
+
+.donation__content {
+  max-width: 380px;
+  gap: 2rem;
+}
+
+.donation__header {
+  padding: 0 8rem 0 0;
+}
+
+.donation__subtitle {
+  color: #545454;
+  padding: 0 7.3rem 0 0;
+}
+
+.donation__text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #b2b2b2;
+}
+
+.donation__credit-card {
+  margin: 0 3.1rem 0 0;
 }
 
 /*# sourceMappingURL=main.css.map */

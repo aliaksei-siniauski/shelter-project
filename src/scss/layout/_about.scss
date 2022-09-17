@@ -5,7 +5,7 @@
 .about-columns {
   @extend %flex;
   @extend %js-content-space-between;
-  gap: 12rem;
+  gap: $gap-collumns;
 }
 
 .about__content {

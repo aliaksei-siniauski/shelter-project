@@ -27,11 +27,14 @@
 @import "components/burger";
 @import "components/slider";
 @import "components/section";
+@import "components/credit-card";
 
 /* Layout  */
-@import "layout/columns";
+
 @import "layout/header";
 @import "layout/hero";
 @import "layout/about";
 @import "layout/pets";
+@import "layout/help";
+@import "layout/donation";
 @import "layout/footer";

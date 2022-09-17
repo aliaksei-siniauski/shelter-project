@@ -16,8 +16,10 @@ h3 {
 
 h4 {
   @include font($size-second, $line-second);
+  @extend %letter-spacing-main;
 }
 
 h5 {
   @include font($size-main, $line-modal-info);
+  @extend %letter-spacing-main;
 }

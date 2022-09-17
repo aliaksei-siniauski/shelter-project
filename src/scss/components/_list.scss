@@ -1,0 +1,12 @@
+.help-list {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %js-content-center;
+  gap: 5.5rem 12rem;
+}
+
+.help-list__item {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %al-items-center;
+}

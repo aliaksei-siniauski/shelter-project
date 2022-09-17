@@ -1,0 +1,39 @@
+.donation {
+  background: $color-background-section;
+}
+
+.donation__container {
+  max-width: $max-width-donation;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
+}
+
+.donation__img {
+  flex-basis: 505px;
+}
+
+.donation__content {
+  max-width: 380px;
+  @extend %flex;
+  @extend %flex-column;
+  gap: 2rem;
+}
+
+.donation__header {
+  padding: 0 8rem 0 0;
+}
+
+.donation__subtitle {
+  color: $color-section-header;
+  padding: 0 7.3rem 0 0;
+}
+
+.donation__text {
+  @include font($information-size, $line-information, 400, italic);
+  color: $color-information;
+}
+
+.donation__credit-card {
+  margin: 0 3.1rem 0 0;
+}

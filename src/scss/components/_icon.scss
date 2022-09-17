@@ -1,13 +1,71 @@
+%list-icon {
+  width: 60px;
+  height: 60px;
+}
+
 .icon {
   display: inline-block;
   &--arrow-next {
     width: 14px;
     height: 6px;
-    background: url("/src/icons/arrow-next.svg");
+    background: url("../icons/arrow-next.svg");
   }
   &--arrow-prev {
     width: 14px;
     height: 6px;
-    background: url("/src/icons/arrow-prev.svg");
+    background: url("../icons/arrow-prev.svg");
+  }
+
+  &--pet-food {
+    @extend %list-icon;
+    background: url("../icons/help/pet-food.svg");
+  }
+
+  &--transportation {
+    @extend %list-icon;
+    background: url("../icons/help/transportation.svg");
+  }
+
+  &--toys {
+    @extend %list-icon;
+    background: url("../icons/help/toys.svg");
+  }
+
+  &--bowls-cups {
+    @extend %list-icon;
+    background: url("../icons/help/bowls-cups.svg");
+  }
+
+  &--shampoos {
+    @extend %list-icon;
+    background: url("../icons/help/shampoos.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--vitamins {
+    @extend %list-icon;
+    background: url("../icons/help/vitamins.svg");
+  }
+
+  &--medicines {
+    @extend %list-icon;
+    background: url("../icons/help/medicines.svg");
+  }
+
+  &--collars-leashes {
+    @extend %list-icon;
+    background: url("../icons/help/leashes.svg");
+  }
+
+  &--sleeping-area {
+    @extend %list-icon;
+    background: url("../icons/help/sleeping-area.svg");
+  }
+
+  &--credit-card {
+    width: 30px;
+    height: 23px;
+    background: url("../icons/credit-card.svg");
   }
 }
