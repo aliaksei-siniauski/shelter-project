@@ -40,7 +40,7 @@
   flex-wrap: wrap;
 }
 
-.our-pets-slider__wrapper, .footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
+.pets-slider__wrapper, .footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
   flex-direction: column;
 }
 
@@ -61,15 +61,15 @@
   font-family: "Arial", Helvetica, sans-serif;
 }
 
-.pets__button, .section-title {
+.our-friends__button, .section-title {
   text-align: center;
 }
 
-.pagination, .arrow, .list__link:hover, .button {
+.pagination, .arrow, .slide, .list__link:hover, .button {
   transition: ease-in-out 0.5s;
 }
 
-.pagination, .arrow, .button {
+.pagination, .arrow, .slide, .button {
   cursor: pointer;
 }
 
@@ -709,11 +709,13 @@ h5 {
 }
 
 .slide {
-  background: #fafafa;
   flex-basis: 270px;
+  background: #fafafa;
+  border-radius: 0.3rem;
 }
 .slide:hover {
   background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .slide__img {
@@ -834,20 +836,16 @@ h5 {
   margin: 0 0 2.5rem 0;
 }
 
-.pets {
+.our-friends {
   background: #f6f6f6;
 }
 
-.pets__title {
+.our-friends__title {
   margin: 0 0 5.4rem 0;
 }
 
-.pets-slider__wrapper {
+.our-friends-slider__wrapper {
   margin: 0 0 6rem 0;
-}
-
-.pets__button {
-  padding: 6rem 0 0 0;
 }
 
 .help__title {
@@ -953,35 +951,39 @@ h5 {
 }
 
 /* Pages */
-.our-pets__header {
+.pets__header {
   background: #ffffff;
 }
 
 /* Logo */
-.our-pets__logo .logo__title {
+.pets__logo .logo__title {
   color: #545454;
 }
-.our-pets__logo .logo__subtitle {
+.pets__logo .logo__subtitle {
   color: #292929;
 }
 
 /* Header */
-.our-pets__nav .list__link {
+.pets__nav .list__link {
   color: #545454;
 }
-.our-pets__nav .list__link:hover {
+.pets__nav .list__link:hover {
   color: #292929;
 }
-.our-pets__nav .list__link--active {
+.pets__nav .list__link--active {
   color: #292929;
 }
 
 /* Our-pets Slider */
-.our-pets__slider {
+.pets__slider {
   gap: 4rem;
 }
 
-.our-pets__slider-paginations {
+.pets-slider__wrapper {
+  margin-bottom: 0;
+}
+
+.pets__slider-paginations {
   padding: 4.5rem 0 0 0;
 }
 

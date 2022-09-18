@@ -1,10 +1,10 @@
-.our-pets__header {
+.pets__header {
   background: $color-light;
 }
 
 /* Logo */
 
-.our-pets__logo {
+.pets__logo {
   .logo__title {
     color: $color-section-header;
   }
@@ -15,7 +15,7 @@
 
 /* Header */
 
-.our-pets__nav {
+.pets__nav {
   .list__link {
     color: $color-section-header;
     &:hover {
@@ -29,15 +29,16 @@
 
 /* Our-pets Slider */
 
-.our-pets__slider {
+.pets__slider {
   gap: 4rem;
 }
 
-.our-pets-slider__wrapper {
+.pets-slider__wrapper {
   @extend %flex-column;
+  margin-bottom: 0;
 }
 
-.our-pets__slider-paginations {
+.pets__slider-paginations {
   padding: 4.5rem 0 0 0;
 }
 

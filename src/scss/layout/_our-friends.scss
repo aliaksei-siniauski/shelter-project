@@ -1,16 +1,15 @@
-.pets {
+.our-friends {
   background: $color-background-section;
 }
 
-.pets__title {
+.our-friends__title {
   margin: 0 0 5.4rem 0;
 }
 
-.pets-slider__wrapper {
+.our-friends-slider__wrapper {
   margin: $section-margin-bottom;
 }
 
-.pets__button {
-  padding: 6rem 0 0 0;
+.our-friends__button {
   @extend %text-center;
 }

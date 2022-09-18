@@ -16,10 +16,14 @@
   @extend %flex;
   @extend %flex-column;
   @extend %al-items-center;
-  background: $color-link-active;
   flex-basis: 270px;
+  background: $color-link-active;
+  border-radius: 0.3rem;
+  @extend %transition;
+  @extend %cursor-pointer;
   &:hover {
     background: $color-light;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
 
