@@ -715,9 +715,6 @@ h5 {
 .slide:hover {
   background: #ffffff;
 }
-.slide:hover .slide__button > button {
-  background: #fddcc4;
-}
 
 .slide__img {
   margin: 0 0 3rem 0;

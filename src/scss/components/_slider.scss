@@ -20,11 +20,6 @@
   flex-basis: 270px;
   &:hover {
     background: $color-light;
-    .slide__button {
-      > button {
-        background: $color-primary-light;
-      }
-    }
   }
 }
 
