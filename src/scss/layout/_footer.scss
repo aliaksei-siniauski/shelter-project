@@ -19,11 +19,12 @@
 
 .footer-columns {
   @extend %flex;
-  @extend %js-content-space-between;
+  justify-content: space-around;
+  gap: 13rem;
 }
 
 .footer-column {
-  padding: 1.3rem 0 0 0;
+  padding: 1.35rem 0 0 0;
 }
 
 .footer-collumn__title {
@@ -57,4 +58,8 @@
 
 .location__info {
   max-width: 260px;
+}
+
+.footer__link {
+  display: inline-flex;
 }

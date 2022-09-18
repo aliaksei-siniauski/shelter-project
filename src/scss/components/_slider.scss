@@ -3,11 +3,13 @@
   @extend %js-content-space-between;
   @extend %al-items-center;
 }
+
 .slider {
   @extend %flex;
+  @extend %flex-wrap;
   @extend %js-content-space-between;
   @extend %al-items-center;
-  gap: 90px;
+  gap: 9rem;
 }
 
 .slide {
@@ -16,6 +18,14 @@
   @extend %al-items-center;
   background: $color-link-active;
   flex-basis: 270px;
+  &:hover {
+    background: $color-light;
+    .slide__button {
+      > button {
+        background: $color-primary-light;
+      }
+    }
+  }
 }
 
 .slide__img {
@@ -37,7 +47,7 @@
 
 /*Arrows */
 
-.arrow {
+%paginations {
   width: 52px;
   height: 52px;
   @extend %flex;
@@ -47,10 +57,30 @@
   border-radius: $border-radius-main;
   @extend %cursor-pointer;
   @extend %transition;
+}
+
+.arrow {
+  @extend %paginations;
   &:focus {
     background: $color-primary-light;
   }
   &:hover {
     background: $color-primary-light;
+  }
+}
+
+.pagination {
+  @extend %paginations;
+  &--inactive {
+    color: $color-link;
+    border-color: $color-link;
+    &:hover {
+      color: $color-button;
+      border-color: $color-primary;
+    }
+  }
+  &--active {
+    background: $color-primary;
+    color: $color-button;
   }
 }

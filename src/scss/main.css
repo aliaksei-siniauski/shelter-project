@@ -6,7 +6,6 @@
 /* 130% */
 /* 130% */
 /* 110% */
-/*  */
 /* 110% */
 /* Font Family */
 /* Radius*/
@@ -32,25 +31,29 @@
   }
 }
  */
-.footer-columns, .location__city, .mail,
-.phone, .footer__location, .footer__contact, .donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .layout-3-column, .credit-card, .arrow, .slide, .slider, .slider__wrapper, .list, body {
+.slider-paginations, .footer-columns, .location__city, .mail,
+.phone, .footer__location, .footer__contact, .donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .credit-card, .pagination, .arrow, .slide, .slider, .slider__wrapper, .list, body {
   display: flex;
 }
 
-.footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
+.help-list, .slider {
+  flex-wrap: wrap;
+}
+
+.our-pets-slider__wrapper, .footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
   flex-direction: column;
 }
 
-.footer-columns, .donation__container, .about-columns, .hero__container, .header__container, .layout-3-column, .credit-card, .slider, .slider__wrapper, body {
+.donation__container, .about-columns, .hero__container, .header__container, .credit-card, .slider, .slider__wrapper, body {
   justify-content: space-between;
 }
 
-.help-list, .arrow {
+.help-list, .pagination, .arrow {
   justify-content: center;
 }
 
 .location__city, .mail,
-.phone, .donation__container, .help-list__item, .hero__container, .header__container, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
+.phone, .donation__container, .help-list__item, .hero__container, .header__container, .pagination, .arrow, .slide, .slider, .slider__wrapper, .list, .button {
   align-items: center;
 }
 
@@ -62,11 +65,11 @@
   text-align: center;
 }
 
-.arrow, .list__link:hover, .button {
+.pagination, .arrow, .list__link:hover, .button {
   transition: ease-in-out 0.5s;
 }
 
-.arrow, .button {
+.pagination, .arrow, .button {
   cursor: pointer;
 }
 
@@ -702,12 +705,18 @@ h5 {
 }
 
 .slider {
-  gap: 90px;
+  gap: 9rem;
 }
 
 .slide {
   background: #fafafa;
   flex-basis: 270px;
+}
+.slide:hover {
+  background: #ffffff;
+}
+.slide:hover .slide__button > button {
+  background: #fddcc4;
 }
 
 .slide__img {
@@ -729,17 +738,31 @@ h5 {
 }
 
 /*Arrows */
-.arrow {
+.pagination, .arrow {
   width: 52px;
   height: 52px;
   border: 0.2rem solid #f1cdb3;
   border-radius: 10rem;
 }
+
 .arrow:focus {
   background: #fddcc4;
 }
 .arrow:hover {
   background: #fddcc4;
+}
+
+.pagination--inactive {
+  color: #cdcdcd;
+  border-color: #cdcdcd;
+}
+.pagination--inactive:hover {
+  color: #292929;
+  border-color: #f1cdb3;
+}
+.pagination--active {
+  background: #f1cdb3;
+  color: #292929;
 }
 
 .section {
@@ -760,10 +783,10 @@ h5 {
   color: #545454;
 }
 
-.layout-3-column > * {
-  flex-basis: 26%;
+/* .layout-3-column {
+  @include columns($width: 26%);
 }
-
+ */
 /* Layout  */
 .header {
   padding: 6rem 0;
@@ -822,8 +845,12 @@ h5 {
   margin: 0 0 5.4rem 0;
 }
 
-.pets-slider-wrapper {
+.pets-slider__wrapper {
   margin: 0 0 6rem 0;
+}
+
+.pets__button {
+  padding: 6rem 0 0 0;
 }
 
 .help__title {
@@ -835,7 +862,6 @@ h5 {
 }
 
 .help-list {
-  flex-wrap: wrap;
   gap: 5.5rem 12rem;
 }
 
@@ -894,8 +920,13 @@ h5 {
   padding: 4rem 0 0;
 }
 
+.footer-columns {
+  justify-content: space-around;
+  gap: 13rem;
+}
+
 .footer-column {
-  padding: 1.3rem 0 0 0;
+  padding: 1.35rem 0 0 0;
 }
 
 .footer-collumn__title {
@@ -918,6 +949,47 @@ h5 {
 
 .location__info {
   max-width: 260px;
+}
+
+.footer__link {
+  display: inline-flex;
+}
+
+/* Pages */
+.our-pets__header {
+  background: #ffffff;
+}
+
+/* Logo */
+.our-pets__logo .logo__title {
+  color: #545454;
+}
+.our-pets__logo .logo__subtitle {
+  color: #292929;
+}
+
+/* Header */
+.our-pets__nav .list__link {
+  color: #545454;
+}
+.our-pets__nav .list__link:hover {
+  color: #292929;
+}
+.our-pets__nav .list__link--active {
+  color: #292929;
+}
+
+/* Our-pets Slider */
+.our-pets__slider {
+  gap: 4rem;
+}
+
+.our-pets__slider-paginations {
+  padding: 4.5rem 0 0 0;
+}
+
+.slider-paginations {
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
