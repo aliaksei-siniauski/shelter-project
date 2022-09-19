@@ -6,20 +6,34 @@ h1 {
 h2 {
   @include font($size-hero-title, $line-hero);
   color: $color-light;
+  @include media-mobile {
+    @include font($size-header-mb, $line-header-mb);
+    text-align: center;
+  }
 }
 
 h3 {
   @include font($size-header, $line-header);
   color: $color-section-header;
   @extend %letter-spacing-main;
+  @include media-mobile {
+    @include font($size-header-mb, $line-header-mb);
+    text-align: center;
+  }
 }
 
 h4 {
   @include font($size-second, $line-second);
   @extend %letter-spacing-main;
+  @include media-mobile {
+    @include font($size-main, $line-modal-info);
+  }
 }
 
 h5 {
   @include font($size-main, $line-modal-info);
   @extend %letter-spacing-main;
+  @include media-mobile {
+    letter-spacing: normal;
+  }
 }

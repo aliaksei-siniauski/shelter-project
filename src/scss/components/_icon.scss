@@ -19,21 +19,41 @@
   &--pet-food {
     @extend %list-icon;
     background: url("../icons/help/pet-food.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--transportation {
     @extend %list-icon;
     background: url("../icons/help/transportation.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--toys {
     @extend %list-icon;
     background: url("../icons/help/toys.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--bowls-cups {
     @extend %list-icon;
     background: url("../icons/help/bowls-cups.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--shampoos {
@@ -41,26 +61,51 @@
     background: url("../icons/help/shampoos.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--vitamins {
     @extend %list-icon;
     background: url("../icons/help/vitamins.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--medicines {
     @extend %list-icon;
     background: url("../icons/help/medicines.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--collars-leashes {
     @extend %list-icon;
     background: url("../icons/help/leashes.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--sleeping-area {
     @extend %list-icon;
     background: url("../icons/help/sleeping-area.svg");
+    @include media-mobile {
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
   }
 
   &--credit-card {

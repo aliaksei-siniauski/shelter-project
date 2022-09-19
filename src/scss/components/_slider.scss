@@ -2,6 +2,7 @@
   @extend %flex;
   @extend %js-content-space-between;
   @extend %al-items-center;
+  overflow: hidden;
 }
 
 .slider {
@@ -10,6 +11,17 @@
   @extend %js-content-space-between;
   @extend %al-items-center;
   gap: 9rem;
+  @include media-tablet {
+    flex-basis: 580px;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    overflow: hidden;
+  }
+  @include media-mobile {
+    flex-basis: 270px;
+    overflow: hidden;
+    gap: 0;
+  }
 }
 
 .slide {
@@ -18,7 +30,7 @@
   @extend %al-items-center;
   flex-basis: 270px;
   background: $color-link-active;
-  border-radius: 0.3rem;
+  border: $img-radius;
   @extend %transition;
   @extend %cursor-pointer;
   &:hover {
@@ -29,7 +41,6 @@
 
 .slide__img {
   margin: $slide-margin-bottom;
-  border: $img-radius;
 }
 
 .slide__title {
@@ -65,6 +76,22 @@
   }
   &:hover {
     background: $color-primary-light;
+  }
+  @include media-mobile {
+    position: absolute;
+    bottom: 9.5rem;
+  }
+}
+
+#arrow-left {
+  @include media-mobile {
+    left: 6.8rem;
+  }
+}
+
+#arrow-right {
+  @include media-mobile {
+    right: 6.8rem;
   }
 }
 

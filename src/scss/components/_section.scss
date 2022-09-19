@@ -1,8 +1,18 @@
 .section {
-  padding: 8rem 0 10rem;
+  padding: 7.9rem 0 10rem;
+
+  @include media-mobile {
+    padding: 4.2rem 0;
+  }
 }
 
 .section-title {
   margin: $section-margin-bottom;
   @extend %text-center;
+}
+
+.title-break-line {
+  @include media-mobile {
+    display: block;
+  }
 }

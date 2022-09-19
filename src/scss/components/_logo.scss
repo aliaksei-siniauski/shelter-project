@@ -1,6 +1,8 @@
 .logo {
   display: inline-block;
   color: $color-primary;
+  @include media-mobile {
+  }
 }
 
 .logo__title {
@@ -12,4 +14,7 @@
   font-family: $font-family-second;
   @include font($size-logo-subttile, $line-logo-subtitle);
   letter-spacing: 0.1em;
+  @include media-tablet {
+    color: $color-light;
+  }
 }

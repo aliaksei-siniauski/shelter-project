@@ -22,6 +22,7 @@ $footer-gradient-background: url("../images/background/noise_transparent@2x.png"
 
 $size-main: 1.5rem;
 $size-second: 2rem;
+$size-header-mb: 2.5rem;
 $size-button: 1.7rem;
 $size-header: 3.5rem;
 $size-logo-title: 3.2rem;
@@ -34,6 +35,7 @@ $size-hero-title: 4.4rem;
 $line-main: 2.4rem; /* 160% */
 $line-second: 2.3rem; /* 115% */
 $line-header: 4.6rem; /* 130% */
+$line-header-mb: 3.2rem; /* 130% */
 $line-button: 2.2rem; /* 130% */
 $line-modal-text: 1.4rem; /* 110% */
 $line-logo-subtitle: 1.5rem;
@@ -58,10 +60,13 @@ $regular: 400;
 $bold: 700;
 
 /* Width */
+$tablet-width: 768px;
+$mobile-width: 426px;
 
-$main-width: 1230px;
-$tablet-width: 738px;
-$mobile-width: 330px;
+$main-width-container: 1230px;
+$tablet-width-container: 738px;
+$mobile-width-container: 330px;
+$mobile-widh-big: 506px;
 
 /* Max-width section */
 
@@ -71,7 +76,7 @@ $max-width-donation: 945px;
 /* Padding & Margin */
 
 $hero-margin-bottom: 0 0 4.2rem 0;
-$about-margin-bottom: 0 0 2.5rem 0;
+$about-margin-bottom: 0 0 2.6rem 0;
 $section-margin-bottom: 0 0 6rem 0;
 $slide-margin-bottom: 0 0 3rem 0;
 $donation-margin-bottom: 0 0 2rem 0;

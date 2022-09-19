@@ -1,5 +1,11 @@
 .container {
-  max-width: $main-width;
+  max-width: $main-width-container;
   margin: 0 auto;
   padding-inline: $padding-inline;
+  @include media-tablet {
+    max-width: $tablet-width-container;
+  }
+  @include media-mobile {
+    max-width: $mobile-width-container;
+  }
 }

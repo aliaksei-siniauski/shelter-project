@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/scss/main.css" />
   </head>
   <body>
+    <div class="opacity-container"></div>
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="#">
@@ -40,9 +41,9 @@
         </nav>
         <!-- close nav -->
         <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
         </div>
         <!-- close hamburger -->
       </div>
@@ -53,7 +54,10 @@
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__content">
-            <h2 class="hero__title">Not only people need a&nbsp;house</h2>
+            <h2 class="hero__title">
+              Not only people
+              <span class="title-break-line">need a&nbsp;house</span>
+            </h2>
             <p class="hero__text">
               We&nbsp;offer to&nbsp;give a&nbsp;chance to&nbsp;a&nbsp;little and
               nice puppy with an extremely wide and open heart.
@@ -65,14 +69,29 @@
                 >Make a friend</a
               >
             </div>
+            <!-- close hero__button -->
           </div>
-          <img
-            src="src/images/hero/hero-1.png"
-            width="698"
-            height="728"
-            alt="scren-puppy"
-          />
-          <!-- close hero__button -->
+          <picture class="hero__picture">
+            <source
+              media="(max-width: 426px)"
+              srcset="src/images/hero/hero-3.png"
+              width="260"
+              height="272"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="src/images/hero/hero-3.png"
+              width="569"
+              height="593"
+            />
+            <img
+              class="hero__img"
+              src="src/images/hero/hero-1.png"
+              width="698"
+              height="728"
+              alt="scren-puppy"
+            />
+          </picture>
         </div>
         <!-- close container -->
       </section>
@@ -80,13 +99,21 @@
       <section id="about" class="section about">
         <div class="container about__container">
           <div class="layout-2-columns about-columns">
-            <img
-              class="about__img"
-              src="src/images/about/about-1.png"
-              width="300"
-              height="408"
-              alt="about-pet"
-            />
+            <picture class="about__picture">
+              <source
+                media="(max-width: 426px)"
+                srcset="src/images/about/about-2.png"
+                width="260"
+                height="354"
+              />
+              <img
+                class="about__img"
+                src="src/images/about/about-1.png"
+                width="300"
+                height="408"
+                alt="about-pet"
+              />
+            </picture>
             <div class="about__content">
               <h3 class="about__title">About the shelter “Cozy House”</h3>
               <div class="about__text">
@@ -116,7 +143,7 @@
       </section>
       <!-- close about -->
       <section class="section our-friends">
-        <div class="container">
+        <div class="container our-friends__container">
           <h3 class="section-title our-friends__title">
             Our friends who<br />
             are looking for a&nbsp;house
@@ -247,16 +274,28 @@
       </section>
       <section class="section dontation">
         <div class="container donation__container">
-          <img
-            class="donation__img"
-            src="src/images/donation/donation-1.png"
-            width="505"
-            height="261"
-            alt="donation-dog"
-          />
+          <picture class="donation__picture">
+            <source
+              media="(max-width: 476px )"
+              srcset="src/images/donation/donation-2.png"
+              width="260"
+              height="135"
+            />
+            <img
+              class="donation__img"
+              src="src/images/donation/donation-1.png"
+              width="505"
+              height="261"
+              alt="donation-dog"
+            />
+          </picture>
           <div class="donation__content">
-            <h3 class="donation__header">You can also make a&nbsp;donation</h3>
-            <h5 class="dontation__subtitle">
+            <h3 class="donation__header">
+              You can also<span class="title-break-line">
+                make a&nbsp;donation</span
+              >
+            </h3>
+            <h5 class="donation__subtitle">
               Name of the bank / Type of bank account
             </h5>
             <div class="credit-card donation__credit-card">
@@ -279,11 +318,12 @@
     </main>
     <footer id="contacts" class="footer">
       <div class="container footer__container">
-        <div class="layout-3-column footer-columns">
+        <div class="footer-columns">
           <div class="footer-column footer__contact">
-            <h3 class="footer-collumn__title">
-              For questions<br />
-              and suggestions
+            <h3 class="footer-column__title">
+              For questions<span class="title-break-line">
+                and suggestions</span
+              >
             </h3>
             <div class="mail">
               <span class="icon icon--mail"></span>
@@ -301,9 +341,9 @@
           </div>
           <!-- close footer__contact -->
           <div class="footer-column footer__location">
-            <h3 class="footer-collumn__title">
-              We are waiting<br />
-              for your visit
+            <h3 class="footer-column__title footer__location-title">
+              We are waiting
+              <span class="title-break-line"> for your visit</span>
             </h3>
             <div class="location__city">
               <span class="icon icon--marker"></span>
@@ -333,13 +373,21 @@
             <!-- close location__city -->
           </div>
           <!-- close footer__visit -->
-          <img
-            class="footer__img"
-            src="src/images/footer/footer-1.png"
-            width="300"
-            height="310"
-            alt="footer-puppy"
-          />
+          <picture class="footer__picture">
+            <source
+              media="(max-width: 475px )"
+              srcset="src/images/footer/footer-2.png"
+              width="260"
+              height="269"
+            />
+            <img
+              class="footer__img"
+              src="src/images/footer/footer-1.png"
+              width="300"
+              height="310"
+              alt="footer-puppy"
+            />
+          </picture>
         </div>
         <!-- layout-3-column -->
       </div>

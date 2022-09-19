@@ -1,20 +1,45 @@
 .about__container {
   max-width: $max-width-about;
+  @include media-tablet {
+    max-width: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.6rem;
+    @include media-mobile {
+      max-width: 300px;
+      padding-inline: 1.5rem;
+    }
+  }
 }
 
 .about-columns {
   @extend %flex;
   @extend %js-content-space-between;
   gap: $gap-collumns;
+  @include media-tablet {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 8rem;
+  }
+  @include media-mobile {
+    gap: 1.8rem;
+  }
 }
 
 .about__content {
   padding: 1.4rem 0;
+  @include media-tablet {
+    padding: 0;
+  }
 }
 
 .about__title {
   padding: 0 6rem 0 0;
   margin: $about-margin-bottom;
+  @include media-mobile {
+    padding: 0;
+  }
 }
 
 .about__text {
@@ -23,5 +48,11 @@
   color: $color-paragraph;
   &--first {
     margin: $about-margin-bottom;
+    @include media-mobile {
+      margin: 0 0 2.2rem 0;
+    }
+  }
+  @include media-mobile {
+    text-align: justify;
   }
 }
