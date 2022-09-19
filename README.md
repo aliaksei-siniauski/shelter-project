@@ -8,23 +8,26 @@ Animal Shelter responsive and interactive website
 
 ## Highlights:
 
-- semantic HTML
-- readable and easy to maintain code
-- generating and output data into the web page
-- working with the DOM
-- event handling
-- event delegation
-- arrow functions
-- classes
-- modular JavaScript
+- Semantic HTML
+- Readable and easy to maintain code
+- Responsive CSS
+- CSS animations
+- Dynamically inserting content
+- Querying and manipulating with the DOM
+- Event listeners
+- Scroll and click events
+- Arrow and callback functions
+- Classes
+- Modular JavaScript
 
 ## Features:
 
-- generating data from objects
-- infinite slider with a pseudo-random set of pets
-- burger menu
-- displaying a pop-up menu with a description of a particular pet
-- implementing pagination on the pets page
+- Interactive burger menu
+- Infinite slider with a pseudo-random set of pets
+- Pop-up menu with a description of the current pet
+- Pagination on the pets page
+- Be able to resize the page without breaking the layout
+- Be able to smoothly scroll to other sections of the page with anchors
 
 ## Techs:
 
