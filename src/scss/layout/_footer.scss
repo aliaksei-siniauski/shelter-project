@@ -66,6 +66,9 @@
 .location__info {
   color: $color-primary;
   @include font($size-second, $line-second);
+  &:hover {
+    color: $color-link-active;
+  }
 }
 
 .footer__contact {
@@ -102,6 +105,11 @@
   @extend %footer-contacts-items;
   @include media-tablet {
     padding-inline: 1rem;
+  }
+  &:first-of-type {
+    @include media-mobile {
+      gap: 1.9rem;
+    }
   }
 }
 
