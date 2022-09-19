@@ -30,7 +30,7 @@
   @extend %al-items-center;
   flex-basis: 270px;
   background: $color-link-active;
-  border: $img-radius;
+  border-radius: $img-radius;
   @extend %transition;
   @extend %cursor-pointer;
   &:hover {

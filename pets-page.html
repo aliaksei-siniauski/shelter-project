@@ -196,11 +196,12 @@
     </main>
     <footer id="contacts" class="footer">
       <div class="container footer__container">
-        <div class="layout-3-column footer-columns">
+        <div class="footer-columns">
           <div class="footer-column footer__contact">
-            <h3 class="footer-collumn__title">
-              For questions<br />
-              and suggestions
+            <h3 class="footer-column__title">
+              For questions<span class="title-break-line">
+                and suggestions</span
+              >
             </h3>
             <div class="mail">
               <span class="icon icon--mail"></span>
@@ -218,9 +219,9 @@
           </div>
           <!-- close footer__contact -->
           <div class="footer-column footer__location">
-            <h3 class="footer-collumn__title">
-              We are waiting<br />
-              for your visit
+            <h3 class="footer-column__title footer__location-title">
+              We are waiting
+              <span class="title-break-line"> for your visit</span>
             </h3>
             <div class="location__city">
               <span class="icon icon--marker"></span>
@@ -250,13 +251,21 @@
             <!-- close location__city -->
           </div>
           <!-- close footer__visit -->
-          <img
-            class="footer__img"
-            src="src/images/footer/footer-1.png"
-            width="300"
-            height="310"
-            alt="footer-puppy"
-          />
+          <picture class="footer__picture">
+            <source
+              media="(max-width: 475px )"
+              srcset="src/images/footer/footer-2.png"
+              width="260"
+              height="269"
+            />
+            <img
+              class="footer__img"
+              src="src/images/footer/footer-1.png"
+              width="300"
+              height="310"
+              alt="footer-puppy"
+            />
+          </picture>
         </div>
         <!-- layout-3-column -->
       </div>

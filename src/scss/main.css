@@ -847,7 +847,7 @@ h5 {
 .slide {
   flex-basis: 270px;
   background: #fafafa;
-  border: 0.9rem 0.9rem 0px 0px;
+  border-radius: 0.9rem 0.9rem;
 }
 .slide:hover {
   background: #ffffff;
@@ -1122,7 +1122,7 @@ h5 {
 }
 
 .our-friends-slider__wrapper {
-  margin: 0 0 6rem 0;
+  padding: 0 0 6rem 0;
 }
 @media (max-width: 576px) {
   .our-friends-slider__wrapper {
