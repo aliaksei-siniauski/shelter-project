@@ -1,8 +1,9 @@
 %link-transition {
   transition: ease-in-out 0.8s;
 }
-.header__nav {
-  @include media-mobile {
+
+.navigation {
+  @media (max-width: 765px) {
     display: none;
   }
 }

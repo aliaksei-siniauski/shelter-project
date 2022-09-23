@@ -1,3 +1,10 @@
+%slider {
+  @extend %flex;
+  @extend %flex-wrap;
+  @extend %js-content-space-between;
+  @extend %al-items-center;
+}
+
 .slider__wrapper {
   @extend %flex;
   @extend %js-content-space-between;
@@ -6,10 +13,7 @@
 }
 
 .slider {
-  @extend %flex;
-  @extend %flex-wrap;
-  @extend %js-content-space-between;
-  @extend %al-items-center;
+  @extend %slider;
   gap: 9rem;
   @include media-tablet {
     flex-basis: 580px;
