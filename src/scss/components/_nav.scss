@@ -2,6 +2,12 @@
   transition: ease-in-out 0.8s;
 }
 
+.navigation {
+  @media (max-width: 765px) {
+    display: none;
+  }
+}
+
 .list {
   @extend %flex;
   @extend %al-items-center;

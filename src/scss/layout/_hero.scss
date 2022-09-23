@@ -6,20 +6,48 @@
   @extend %flex;
   @extend %js-content-space-between;
   @extend %al-items-center;
+  @include media-tablet {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+  }
 }
 
 .hero__content {
   max-width: 460px;
   padding: 0 0 7.8rem;
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 9.8rem;
+  }
+  @include media-mobile {
+    padding: 0 0 10.5rem 0;
+    text-align: center;
+  }
 }
 
 .hero__title {
   margin: $hero-margin-bottom;
   padding: 0 15rem 0 0;
+  @include media-mobile {
+    padding: 0 0 0;
+  }
 }
 
 .hero__text {
   margin: $hero-margin-bottom;
   @extend %font-add;
   color: $color-link;
+  @include media-tablet {
+    min-width: 300px;
+  }
+}
+
+.hero__img {
+  @include media-tablet {
+    margin-left: auto;
+  }
 }

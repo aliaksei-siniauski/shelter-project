@@ -1,0 +1,84 @@
+.pets {
+  padding: 7.9rem 0 7.5rem;
+  background: $color-background-section;
+}
+
+.pets__header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 0;
+  background: $color-light;
+}
+
+/* Logo */
+
+.pets__logo {
+  .logo__title {
+    color: $color-section-header;
+  }
+  .logo__subtitle {
+    color: $color-button;
+  }
+}
+
+/* Header */
+
+.pets__nav {
+  .list__link {
+    color: $color-section-header;
+    &:hover {
+      color: $color-button;
+    }
+    &--active {
+      color: $color-button;
+    }
+  }
+}
+
+/* Our-pets Slider */
+.pets__title {
+  margin: 0;
+  padding: 0 0 3rem 0;
+}
+
+.pets__slider {
+  @extend %slider;
+  gap: 2.4rem 4rem;
+  @include media-tablet {
+    justify-content: center;
+    height: 1365px;
+    gap: 2.6rem 4rem;
+    overflow: hidden;
+  }
+}
+
+.pets-slider__wrapper {
+  @extend %flex-column;
+}
+
+.pets__slider-paginations {
+  padding: 5.5rem 0 0 0;
+  @include media-tablet {
+    padding: 4rem 0 0;
+  }
+}
+
+.slider-paginations {
+  @extend %flex;
+  gap: 2rem;
+
+  @media (max-width: 577px) {
+    gap: 0.7rem;
+  }
+}
+
+/* Burger  */
+
+.pets__burger-menu {
+  .burger-menu__line {
+    background: $color-modal;
+  }
+}
