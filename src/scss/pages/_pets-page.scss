@@ -19,6 +19,7 @@
   .logo__title {
     color: $color-section-header;
   }
+
   .logo__subtitle {
     color: $color-button;
   }
@@ -27,11 +28,17 @@
 /* Header */
 
 .pets__nav {
+  @media (max-width: 765px) {
+    display: none;
+  }
+
   .list__link {
     color: $color-section-header;
+
     &:hover {
       color: $color-button;
     }
+
     &--active {
       color: $color-button;
     }
@@ -47,6 +54,7 @@
 .pets__slider {
   @extend %slider;
   gap: 2.4rem 4rem;
+
   @include media-tablet {
     justify-content: center;
     height: 1365px;
@@ -61,6 +69,7 @@
 
 .pets__slider-paginations {
   padding: 5.5rem 0 0 0;
+
   @include media-tablet {
     padding: 4rem 0 0;
   }

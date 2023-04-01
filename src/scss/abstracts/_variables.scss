@@ -8,15 +8,16 @@ $color-button: #292929;
 $color-link: #cdcdcd;
 $color-link-active: #fafafa;
 $color-background-section: #f6f6f6;
+$color-overlay: rgba(41, 41, 41, 0.6);
 
 $color-information: #b2b2b2;
 $color-light: #ffffff;
 $color-modal: #000000;
 
 $start-screen-gradient-background: url("../images/background/noise_transparent@2x.png"),
-  linear-gradient(90deg, #5b483a, #211f20);
+linear-gradient(90deg, #5b483a, #211f20);
 $footer-gradient-background: url("../images/background/noise_transparent@2x.png"),
-  linear-gradient(90deg, #5b483a, #211f20);
+linear-gradient(90deg, #5b483a, #211f20);
 
 /* Size */
 
@@ -32,22 +33,32 @@ $size-hero-title: 4.4rem;
 
 /* Line-height */
 
-$line-main: 2.4rem; /* 160% */
-$line-second: 2.3rem; /* 115% */
-$line-header: 4.6rem; /* 130% */
-$line-header-mb: 3.2rem; /* 130% */
-$line-button: 2.2rem; /* 130% */
-$line-modal-text: 1.4rem; /* 110% */
+$line-main: 2.4rem;
+/* 160% */
+$line-second: 2.3rem;
+/* 115% */
+$line-header: 4.6rem;
+/* 130% */
+$line-header-mb: 3.2rem;
+/* 130% */
+$line-button: 2.2rem;
+/* 130% */
+$line-modal-text: 1.4rem;
+/* 110% */
 $line-logo-subtitle: 1.5rem;
-$line-modal-info: 1.7rem; /* 110% */
+$line-modal-info: 1.7rem;
+/* 110% */
 $line-information: 1.8rem;
 $line-logo-title: 3.5rem;
 $line-hero: 5.7rem;
 
 /* Font Family */
 
-$font-family-primary: "Georgia", serif;
-$font-family-second: "Arial", Helvetica, sans-serif;
+$font-family-primary: "Georgia",
+serif;
+$font-family-second: "Arial",
+Helvetica,
+sans-serif;
 
 /* Radius*/
 

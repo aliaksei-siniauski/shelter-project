@@ -15,12 +15,14 @@
 .slider {
   @extend %slider;
   gap: 9rem;
+
   @include media-tablet {
     flex-basis: 580px;
     flex-wrap: nowrap;
     gap: 4rem;
     overflow: hidden;
   }
+
   @include media-mobile {
     flex-basis: 270px;
     overflow: hidden;
@@ -37,6 +39,7 @@
   border-radius: $img-radius;
   @extend %transition;
   @extend %cursor-pointer;
+
   &:hover {
     background: $color-light;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -69,18 +72,23 @@
   @extend %al-items-center;
   border: 0.2rem solid $color-primary;
   border-radius: $border-radius-main;
-  @extend %cursor-pointer;
   @extend %transition;
+  @extend %cursor-pointer;
 }
 
 .arrow {
   @extend %paginations;
+
   &:focus {
     background: $color-primary-light;
   }
+
   &:hover {
     background: $color-primary-light;
+    box-shadow: rgba(255, 255, 255, 0.978) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
+
   @include media-mobile {
     position: absolute;
     bottom: 9.5rem;
@@ -101,14 +109,17 @@
 
 .pagination {
   @extend %paginations;
+
   &--inactive {
     color: $color-link;
     border-color: $color-link;
+
     &:hover {
       color: $color-button;
       border-color: $color-primary;
     }
   }
+
   &--active {
     background: $color-primary;
     color: $color-button;

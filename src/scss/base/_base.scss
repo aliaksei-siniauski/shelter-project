@@ -7,4 +7,12 @@ body {
   @include font($size-main, $line-main);
   color: $color-paragraph;
   background: $color-light;
+  overflow: hidden;
+}
+
+
+.boody-hidden {
+  height: 100vh;
+  overflow-y: hidden;
+  min-height: auto;
 }
