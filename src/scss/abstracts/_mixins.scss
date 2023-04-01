@@ -16,6 +16,14 @@
   font-style: $style;
 }
 
+@mixin columns($width) {
+  @extend %flex-main;
+  @extend %justify-space-between;
+  > * {
+    flex-basis: $width;
+  }
+}
+
 /* Meida quaries */
 
 @mixin media-desktop {

@@ -15,10 +15,12 @@
 
 .footer__container {
   padding: 4rem 0 0;
+
   @include media-tablet {
     max-width: 670px;
     padding: 1.8rem 0 0;
   }
+
   @include media-mobile {
     max-width: $mobile-width-container;
   }
@@ -28,11 +30,13 @@
   @extend %flex;
   justify-content: space-around;
   gap: 13rem;
+
   @include media-tablet {
     flex-wrap: wrap;
     gap: 6rem;
     justify-content: center;
   }
+
   @include media-mobile {
     gap: 3rem;
   }
@@ -40,11 +44,14 @@
 
 .footer-column {
   padding: 1.8rem 0 0 0;
+
   @include media-tablet {
     padding: 1.35rem 0 0 0;
   }
+
   @include media-mobile {
     padding: 1rem 0 0;
+
     &:last-of-type {
       padding: 1rem 0;
     }
@@ -53,8 +60,10 @@
 
 .footer-column__title {
   color: $color-light;
+
   .title-break-line {
     display: block;
+
     @include media-mobile {
       display: inline;
     }
@@ -65,7 +74,9 @@
 .phone__number,
 .location__info {
   color: $color-primary;
+  @extend %transition;
   @include font($size-second, $line-second);
+
   &:hover {
     color: $color-link-active;
   }
@@ -74,6 +85,7 @@
 .footer__contact {
   @extend %footer-contacts;
   gap: 3.76rem;
+
   @include media-mobile {
     gap: 4rem;
   }
@@ -82,6 +94,7 @@
 .mail,
 .phone {
   @extend %footer-contacts-items;
+
   @include media-mobile {
     align-self: center;
   }
@@ -90,6 +103,7 @@
 .footer__location {
   @extend %footer-contacts;
   gap: 3.1rem;
+
   @include media-mobile {
     gap: 4rem;
   }
@@ -103,9 +117,11 @@
 
 .location__city {
   @extend %footer-contacts-items;
+
   @include media-tablet {
     padding-inline: 1rem;
   }
+
   &:first-of-type {
     @include media-mobile {
       gap: 1.9rem;

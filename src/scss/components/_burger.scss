@@ -4,19 +4,23 @@
   display: none;
   @extend %cursor-pointer;
   user-select: none;
+
   @media (max-width: 765px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    & .open {
+
+    &.open {
       transform: rotate(-90deg);
     }
   }
+
   @include media-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    & .open {
+
+    &.open {
       transform: rotate(-90deg);
     }
   }
