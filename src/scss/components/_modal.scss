@@ -49,5 +49,52 @@
   svg {
     pointer-events: none;
   }
+}
 
+
+.pets-modal__content {
+  @extend %flex;
+  color: $color-modal;
+}
+
+.pets-modal__img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+}
+
+.pets-modal__info {
+  @extend %flex;
+  @extend %flex-column;
+  padding: 5rem 2rem 9rem 3rem;
+}
+
+.pets-modal__title {
+  color: $color-modal;
+}
+
+.pets-modal__subtitle {
+  @extend %flex;
+  padding: 1rem 0 0;
+}
+
+.pets-modal__text {
+  max-width: 350px;
+  width: 100%;
+  padding: 4rem 0 0;
+}
+
+.pets-modal__list {
+  @extend %flex;
+  @extend %flex-column;
+  gap: 1rem 0;
+  padding: 4rem 0 0;
+}
+
+.pets-modal__item {
+  h5 {
+    display: inline-block;
+    font-weight: $bold;
+  }
 }

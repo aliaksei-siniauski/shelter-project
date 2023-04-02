@@ -16,7 +16,7 @@
 /* Padding & Margin */
 /* Meida quaries */
 .slider-paginations, .footer-columns, .location__city, .mail,
-.phone, .footer__location, .footer__contact, .donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .overlay, .credit-card, .pagination, .arrow, .slide, .slider__wrapper, .pets__slider, .slider, .list, body {
+.phone, .footer__location, .footer__contact, .donation__content, .donation__container, .help-list__item, .help-list, .about-columns, .hero__container, .header__container, .pets-modal__list, .pets-modal__subtitle, .pets-modal__info, .pets-modal__content, .overlay, .credit-card, .pagination, .arrow, .slide, .slider__wrapper, .pets__slider, .slider, .list, body {
   display: flex;
 }
 
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
 }
 
-.pets-slider__wrapper, .footer__location, .footer__contact, .donation__content, .help-list__item, .slide, .button, body {
+.pets-slider__wrapper, .footer__location, .footer__contact, .donation__content, .help-list__item, .pets-modal__list, .pets-modal__info, .slide, .button, body {
   flex-direction: column;
 }
 
@@ -1082,6 +1082,45 @@ h5 {
 }
 .modal-close__icon svg {
   pointer-events: none;
+}
+
+.pets-modal__content {
+  color: #000000;
+}
+
+.pets-modal__img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  height: 100%;
+}
+
+.pets-modal__info {
+  padding: 5rem 2rem 9rem 3rem;
+}
+
+.pets-modal__title {
+  color: #000000;
+}
+
+.pets-modal__subtitle {
+  padding: 1rem 0 0;
+}
+
+.pets-modal__text {
+  max-width: 350px;
+  width: 100%;
+  padding: 4rem 0 0;
+}
+
+.pets-modal__list {
+  gap: 1rem 0;
+  padding: 4rem 0 0;
+}
+
+.pets-modal__item h5 {
+  display: inline-block;
+  font-weight: 700;
 }
 
 /* Layout  */

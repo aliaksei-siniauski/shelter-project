@@ -80,6 +80,11 @@ export class Modal {
         if (classes.contains('overlay') || classes.contains('modal-close__button')) {
             document.querySelector('.overlay').remove();
         }
+        document.addEventListener("keydown", (el) => {
+            if (el.key === "Escape") {
+                document.querySelector('.overlay').remove();
+            }
+        });
 
     }
 }
