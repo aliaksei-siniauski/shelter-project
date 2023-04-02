@@ -103,9 +103,11 @@ const data = [
     }
 ]
 
+
 window.onload = function () {
 
     addPetsClickHandler();
+    closePetsModalByKey();
 }
 
 
@@ -121,6 +123,15 @@ const addPetsClickHandler = () => {
     })
 }
 
+const closePetsModalByKey = () => {
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            let overlay = document.querySelector('.overlay')
+            overlay.remove();
+
+        }
+    });
+}
 
 
 
