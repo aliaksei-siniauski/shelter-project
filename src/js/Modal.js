@@ -77,9 +77,8 @@ export class Modal {
 
     closeModal(e) {
         let classes = e.target.classList
-        if (classes.contains('overlay') || classes.contains('modal-close__button')) {
+        if (classes.contains('overlay') || classes.contains('modal-close__button') || classes.contains('modal-close__icon')) {
             document.querySelector('.overlay').remove();
         }
-
     }
-}
+} 
