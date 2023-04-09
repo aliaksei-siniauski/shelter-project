@@ -61,15 +61,15 @@
     }
   }
 
-  @media (max-width:765px) {
+  @media(max-width:767px) {
     @include font($size-logo-title, $line-main);
 
   }
 }
 
 .header__nav {
-  @media (max-width: 765px) {
-    position: absolute;
+  @media (max-width: 767px) {
+    position: fixed;
     top: 0;
     right: -1000px;
     background: #292929;
@@ -85,7 +85,7 @@
 }
 
 .header__list {
-  @media (max-width: 765px) {
+  @media (max-width: 767px) {
     position: relative;
     flex-direction: column;
     align-items: center;

@@ -1,6 +1,10 @@
 .pets {
   padding: 7.9rem 0 7.5rem;
   background: $color-background-section;
+
+  @include media-mobile {
+    padding: 4.2rem 0;
+  }
 }
 
 .pets__header {
@@ -11,6 +15,10 @@
   right: 0;
   padding: 3rem 0;
   background: $color-light;
+
+  @media (max-width: 767px) {
+    position: inherit;
+  }
 }
 
 /* Logo */
@@ -28,12 +36,18 @@
 /* Header */
 
 .pets__nav {
-  @media (max-width: 765px) {
+  /* @include media-mobile {
     display: none;
-  }
+  } */
+
 
   .list__link {
     color: $color-section-header;
+
+    @media (max-width:767px) {
+      color: $color-link;
+
+    }
 
     &:hover {
       color: $color-button;
@@ -41,14 +55,25 @@
 
     &--active {
       color: $color-button;
+
+      @media (max-width: 767px) {
+        color: $color-link-active;
+
+      }
     }
   }
 }
+
+
 
 /* Our-pets Slider */
 .pets__title {
   margin: 0;
   padding: 0 0 3rem 0;
+
+  @include media-mobile {
+    padding: 0 0 4.2rem 0;
+  }
 }
 
 .pets__slider {
@@ -81,13 +106,17 @@
 
   @media (max-width: 577px) {
     gap: 0.7rem;
-  }
-}
+  }}
 
 /* Burger  */
 
 .pets__burger-menu {
   .burger-menu__line {
     background: $color-modal;
+
+    &.backgroundColor {
+      background: $color-primary;
+    }
   }
+
 }

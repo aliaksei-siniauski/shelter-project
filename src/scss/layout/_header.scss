@@ -1,6 +1,7 @@
 .header {
   padding: 6rem 0;
   background: $start-screen-gradient-background;
+
   @include media-tablet {
     padding: 3rem 0;
   }
@@ -10,8 +11,9 @@
   @extend %flex;
   @extend %js-content-space-between;
   @extend %al-items-center;
+
   @include media-mobile {
     max-width: 300px;
-    padding: 0 4.3rem 0 0;
+    padding-inline: 1rem;
   }
 }

@@ -7,10 +7,12 @@
   @extend %flex;
   @extend %al-items-center;
   @extend %js-content-space-between;
+
   @include media-tablet {
     flex-direction: column-reverse;
     gap: 6rem;
   }
+
   @include media-mobile {
     max-width: $mobile-width-container;
     gap: 4rem;
@@ -31,6 +33,7 @@
 
 .donation__header {
   padding: 0 8rem 0 0;
+
   @include media-mobile {
     padding: 0;
   }
@@ -38,21 +41,26 @@
 
 .donation__subtitle {
   color: $color-section-header;
+
   @include media-mobile {
     line-height: $line-main;
   }
 }
 
 .donation__text {
+  font-family: $font-family-second;
   @include font($information-size, $line-information, 400, italic);
   color: $color-information;
+
   @include media-mobile {
     text-align: justify;
+    padding-inline: 0.5rem;
   }
 }
 
 .donation__credit-card {
   margin: 0 3.1rem 0 0;
+
   @include media-mobile {
     margin: 0 auto;
   }

@@ -72,13 +72,16 @@ export class Modal {
 
     openModal() {
         document.body.append(this.overlay)
+        document.body.classList.add("body-hidden")
+
 
     }
 
     closeModal(e) {
         let classes = e.target.classList
-        if (classes.contains('overlay') || classes.contains('modal-close__button') || classes.contains('modal-close__icon')) {
+        if (classes.contains('overlay') || classes.contains('modal') || classes.contains('modal-close__button') || classes.contains('modal-close__icon')) {
             document.querySelector('.overlay').remove();
+            document.body.classList.remove("body-hidden");
         }
     }
 } 

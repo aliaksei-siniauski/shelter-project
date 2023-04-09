@@ -2,7 +2,7 @@
   padding: 7.9rem 0 10rem;
 
   @include media-mobile {
-    padding: 4.2rem 0;
+    padding: 4.2rem 0 4.3rem;
   }
 }
 
@@ -34,5 +34,6 @@
 }
 
 .modal-overlay {
-  background: $color-overlay;  ;
+  background: $color-overlay;
+  ;
 }

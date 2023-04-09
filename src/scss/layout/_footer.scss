@@ -33,7 +33,7 @@
 
   @include media-tablet {
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 4rem;
     justify-content: center;
   }
 
@@ -110,6 +110,11 @@
 }
 
 .footer__location-title {
+  @include media-tablet {
+    padding-left: 2.1rem;
+
+  }
+
   @include media-mobile {
     padding-inline: 1.5rem;
   }
@@ -119,7 +124,11 @@
   @extend %footer-contacts-items;
 
   @include media-tablet {
-    padding-inline: 1rem;
+    padding-left: 2.1rem;
+  }
+
+  @include media-mobile {
+    padding-left: 1rem;
   }
 
   &:first-of-type {
@@ -135,4 +144,14 @@
 
 .footer__link {
   display: inline-flex;
+}
+
+.footer__img {
+  @include media-tablet {
+    margin: 2.5rem 0 0;
+  }
+
+  @include media-mobile {
+    margin: 0;
+  }
 }
