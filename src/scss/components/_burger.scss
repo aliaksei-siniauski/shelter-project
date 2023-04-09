@@ -5,19 +5,26 @@
   @extend %cursor-pointer;
   user-select: none;
 
-  @media (max-width: 767px) {
-
+  @include media-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 2;
+
+    &.open {
+      transform: rotate(-90deg);
+    }
+  }
+
+  @include media-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &.open {
       transform: rotate(-90deg);
     }
   }
 }
-
 
 .burger-menu__line {
   width: 100%;

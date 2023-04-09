@@ -2,13 +2,13 @@ import { switchMenu } from "./js/Burger.js";
 import { linkScroll } from "./js/Scroll.js";
 import { Modal } from "./js/Modal.js";
 import { PetsModal } from "./js/PetsModal.js";
-import { arrowClicked } from "./js/PetsSlider.js";
+import { generateArray } from "./js/Pagination.js";
 
 
 
-export const data = [
+const data = [
     {
-        id: 0,
+        id: 1,
         name: "Jennifer",
         img: "src/images/pets/jennifer.png",
         type: "Dog",
@@ -20,7 +20,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 1,
+        id: 2,
         name: "Sophia",
         img: "src/images/pets/sophia.png",
         type: "Dog",
@@ -32,7 +32,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 2,
+        id: 3,
         name: "Woody",
         img: "src/images/pets/woody.png",
         type: "Dog",
@@ -44,7 +44,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 3,
+        id: 4,
         name: "Scarlett",
         img: "src/images/pets/scarlet.png",
         type: "Dog",
@@ -56,7 +56,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 4,
+        id: 5,
         name: "Katrine",
         img: "src/images/pets/katrine.png",
         type: "Cat",
@@ -68,7 +68,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 5,
+        id: 6,
         name: "Timmy",
         img: "src/images/pets/timmy.png",
         type: "Cat",
@@ -80,7 +80,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 6,
+        id: 7,
         name: "Freddie",
         img: "src/images/pets/freddie.png",
         type: "Cat",
@@ -92,7 +92,7 @@ export const data = [
         parasites: ["none"]
     },
     {
-        id: 7,
+        id: 8,
         name: "Charly",
         img: "src/images/pets/charly.png",
         type: "Dog",
@@ -145,5 +145,3 @@ const renderPetsModalWindow = (petsModal) => {
     let modal = new PetsModal('pets-modal', petsModal);
     modal.renderModal();
 }
-
-
