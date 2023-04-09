@@ -1,3 +1,4 @@
+export { generateArray }
 
 
 const generateArray = (length) => {
