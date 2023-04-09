@@ -2,9 +2,6 @@ import { switchMenu } from "./js/Burger.js";
 import { linkScroll } from "./js/Scroll.js";
 import { Modal } from "./js/Modal.js";
 import { PetsModal } from "./js/PetsModal.js";
-import { arrowClicked } from "./js/PetsSlider.js";
-
-
 
 export const data = [
     {
@@ -145,5 +142,3 @@ const renderPetsModalWindow = (petsModal) => {
     let modal = new PetsModal('pets-modal', petsModal);
     modal.renderModal();
 }
-
-
