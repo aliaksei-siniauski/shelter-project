@@ -39,6 +39,7 @@
   border-radius: $img-radius;
   @extend %transition;
   @extend %cursor-pointer;
+  opacity: 1;
 
   &:hover {
     background: $color-light;
@@ -71,13 +72,13 @@
   @extend %js-content-center;
   @extend %al-items-center;
   border: 0.2rem solid $color-primary;
-  border-radius: $border-radius-main;
-  @extend %transition;
+  border-radius: $border-radius-main;@extend %transition;
   @extend %cursor-pointer;
 }
 
 .arrow {
   @extend %paginations;
+
 
   &:focus {
     background: $color-primary-light;
