@@ -7,8 +7,8 @@ export { arrowClicked }
 const slideImges = document.querySelectorAll('.slide__img')
 const slideTitles = document.querySelectorAll('.slide__title')
 const slide = document.querySelectorAll('.slide')
-const prevArrow = document.querySelector('#arrow-left')
-const nextArrow = document.querySelector('#arrow-right')
+const prevArrow = document.getElementById('arrow-left')
+const nextArrow = document.getElementById('arrow-right')
 
 const getRandomNumber = (max) => {
     return Math.floor(Math.random() * Math.floor(max))

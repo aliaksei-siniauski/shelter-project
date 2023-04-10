@@ -2,6 +2,8 @@ import { switchMenu } from "./js/Burger.js";
 import { linkScroll } from "./js/Scroll.js";
 import { Modal } from "./js/Modal.js";
 import { PetsModal } from "./js/PetsModal.js";
+import { lastPageClicked, nextPageClicked, previousPageClicked, firstPageClicked } from "./js/Pagination.js"
+import { addLinkClickHandler } from "./js/Navigation.js";
 
 export const data = [
     {
@@ -109,8 +111,6 @@ window.onload = function () {
     closePetsModalByKey();
 }
 
-
-
 const addPetsClickHandler = () => {
     document.querySelector('.slider__wrapper').addEventListener('click', (e) => {
         if (e.target.closest('.slide')) {
@@ -131,7 +131,6 @@ const closePetsModalByKey = () => {
         }
     });
 }
-
 
 
 const getClickedData = (id) => {

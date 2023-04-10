@@ -16,6 +16,7 @@
   &--color {
     background: $color-primary;
     border: $color-primary;
+
     &:hover {
       background: $color-primary-light;
     }
@@ -24,6 +25,7 @@
   &--border {
     background: $color-light;
     border: 2px solid $color-primary;
+
     &:hover {
       background: $color-primary;
     }

@@ -3,6 +3,7 @@ import { linkScroll } from "./js/Scroll.js";
 import { Modal } from "./js/Modal.js";
 import { PetsModal } from "./js/PetsModal.js";
 import { arrowClicked } from "./js/PetsSlider.js";
+import { addLinkClickHandler } from "./js/Navigation.js";
 
 
 
@@ -39,7 +40,7 @@ export const data = [
         breed: "Golden Retriever",
         description: "Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.",
         age: "3 years 6 months",
-        inoculations: ["adenovirus", "distemper"],
+        inoculations: ["adenovirus", " distemper"],
         diseases: ["right back leg mobility reduced"],
         parasites: ["none"]
     },
@@ -75,7 +76,7 @@ export const data = [
         breed: "British Shorthair",
         description: "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
         age: "2 years 3 months",
-        inoculations: ["calicivirus", "viral rhinotracheitis"],
+        inoculations: ["calicivirus", " viral rhinotracheitis"],
         diseases: ["kidney stones"],
         parasites: ["none"]
     },
@@ -99,9 +100,9 @@ export const data = [
         breed: "Jack Russell Terrier",
         description: "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
         age: "8 years",
-        inoculations: ["bordetella bronchiseptica", "leptospirosis"],
-        diseases: ["deafness", "blindness"],
-        parasites: ["lice", "fleas"]
+        inoculations: ["bordetella bronchiseptica", " leptospirosis"],
+        diseases: ["deafness", " blindness"],
+        parasites: ["lice", " fleas"]
     }
 ]
 

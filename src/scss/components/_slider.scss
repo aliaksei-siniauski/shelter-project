@@ -72,7 +72,8 @@
   @extend %js-content-center;
   @extend %al-items-center;
   border: 0.2rem solid $color-primary;
-  border-radius: $border-radius-main;@extend %transition;
+  border-radius: $border-radius-main;
+  @extend %transition;
   @extend %cursor-pointer;
 }
 
@@ -114,11 +115,8 @@
   &--inactive {
     color: $color-link;
     border-color: $color-link;
-
-    &:hover {
-      color: $color-button;
-      border-color: $color-primary;
-    }
+    cursor: auto;
+    pointer-events: none;
   }
 
   &--active {
